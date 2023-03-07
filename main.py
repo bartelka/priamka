@@ -11,10 +11,10 @@ b = int(input("Zadaj y-ovu suradnicu bodu A: "))
 c = int(input("Zadaj x-ovu suradnicu bodu B: "))
 d = int(input("Zadaj y-ovu suradnicu bodu B: "))
 
-if a>=c and b>d:
+if a>c and b>d or (a>c or b>d):
     a, c = c, a
     b, d = d, b
-    
+
 A = (a, b)
 B = (c, d)
 
@@ -35,5 +35,5 @@ elif c-a < d-b:
         x = int((y-q)/k)
         pixels[x,y] = (0,0,0)
 
-
 pic.show()
+
